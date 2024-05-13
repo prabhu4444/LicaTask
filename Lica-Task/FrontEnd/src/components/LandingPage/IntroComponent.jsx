@@ -11,14 +11,11 @@ function IntroComponent() {
   const clerk = useClerk();
 
   const handleSignIn = () => {
-    // Make a GET request to the server's "/" path
+    
     axios.get('/api/auth')
       .then(response => {
-        // console.log(response);
-        //window.location.href = response.headers.location;
       })
       .catch(error => {
-        // Handle error (e.g., show error message)
         console.error('Error signing in:', error);
       });
   };
