@@ -8,7 +8,7 @@ const Post = () => {
 
     useEffect(() => {
       const timerID = setInterval(() => tick(), 1000);
-      return () => clearInterval(timerID); // Cleanup on unmount
+      return () => clearInterval(timerID); 
     }, []);
   
     function tick() {
@@ -28,7 +28,7 @@ const Post = () => {
     <div>
         
       <div className="px-44 pt-12 ">
-        {/* User info */}
+        
         <div className="border-gray-500 border-2">
           <div className="flex items-center mb-4">
             <div className="p-4">
@@ -75,7 +75,7 @@ const Post = () => {
         </div>
       </div>
       <div className="px-44 pt-12 ">
-        {/* User info */}
+        
         <div className="border-gray-500 border-2">
           <div className="flex items-center mb-4">
             <div className="p-4">
